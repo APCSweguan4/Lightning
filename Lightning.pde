@@ -36,6 +36,7 @@ void setup()
 {
   size(600,600);
   background(0);
+  frameRate(80);
 }
 
 void left(){
@@ -94,7 +95,7 @@ void tesla(){
 
 void draw()
 {
-  fill(0, 0, 0, 15);
+  fill(0, 0, 0, 25);
   rect(-10, -10, 650, 650);
   stroke(255, 0, 255, oP);
   startX = startX + ((int)(Math.random() * 3) - 1);
@@ -103,13 +104,12 @@ void draw()
     tesla();
     cloud();
     left();
-    down();
   } else if (startX >= 300) {
     tesla();
     cloud();
     right();
-    down();
   }
+  down();
   startX = endX;
   startY = endY;
   cloud1StartX = cloud1EndX;
@@ -130,7 +130,8 @@ void draw()
 
 void mousePressed()
 {
-   oP = 200;
+  if ((startX > 600  && cloud0StartY > 600)|| (startX < 0 && cloud0StartY > 600)){
+     oP = 200;
    startX = 300;
    startY = 300;
    endX = 0;
@@ -163,4 +164,43 @@ void mousePressed()
    cloud5EndY = 0;
    cloud6EndY = 0;
    cloud0EndY = 0;
+  }
+}
+
+public void keyPressed(){
+  if ((startX > 600  && cloud0StartY > 600)|| (startX < 0 && cloud0StartY > 600)){
+     oP = 200;
+   startX = 300;
+   startY = 300;
+   endX = 0;
+   endY = 0;
+   cloud1StartX = 100;
+   cloud2StartX = 200;
+   cloud3StartX = 300;
+   cloud4StartX = 400;
+   cloud5StartX = 500;
+   cloud6StartX = 600;
+   cloud0StartX = 0;
+   cloud1StartY = 10;
+   cloud2StartY = 10;
+   cloud3StartY = 10;
+   cloud4StartY = 10;
+   cloud5StartY = 10;
+   cloud6StartY = 10;
+   cloud0StartY = 10;
+   cloud1EndX = 0;
+   cloud2EndX = 0;
+   cloud3EndX = 0;
+   cloud4EndX = 0;
+   cloud5EndX = 0;
+   cloud6EndX = 0;
+   cloud0EndX = 0;
+   cloud1EndY = 0;
+   cloud2EndY = 0;
+   cloud3EndY = 0;
+   cloud4EndY = 0;
+   cloud5EndY = 0;
+   cloud6EndY = 0;
+   cloud0EndY = 0;
+  }
 }
