@@ -54,13 +54,13 @@ void right(){
 void down(){
   strokeWeight(5);
   stroke(255, 0, 255, 100);
-  line(cloud1StartX, cloud1StartY, cloud1EndX = cloud1StartX + (int)(Math.random() * 7), cloud1EndY = cloud1StartY + (int)(Math.random() * 20));
-  line(cloud2StartX, cloud2StartY, cloud2EndX = cloud2StartX + (int)(Math.random() * 7), cloud2EndY = cloud2StartY + (int)(Math.random() * 20));
-  line(cloud3StartX, cloud3StartY, cloud3EndX = cloud3StartX + (int)(Math.random() * 7), cloud3EndY = cloud3StartY + (int)(Math.random() * 20));
-  line(cloud4StartX, cloud4StartY, cloud4EndX = cloud4StartX + (int)(Math.random() * 7), cloud4EndY = cloud4StartY + (int)(Math.random() * 20));  
-  line(cloud5StartX, cloud5StartY, cloud5EndX = cloud5StartX + (int)(Math.random() * 7), cloud5EndY = cloud5StartY + (int)(Math.random() * 20));
-  line(cloud6StartX, cloud6StartY, cloud6EndX = cloud6StartX + (int)(Math.random() * 7), cloud6EndY = cloud6StartY + (int)(Math.random() * 20));
-  line(cloud0StartX, cloud0StartY, cloud0EndX = cloud0StartX + (int)(Math.random() * 7), cloud0EndY = cloud0StartY + (int)(Math.random() * 20));
+  line(cloud1StartX, cloud1StartY, cloud1EndX = cloud1StartX + (int)(Math.random() * 10) - 3, cloud1EndY = cloud1StartY + (int)(Math.random() * 20));
+  line(cloud2StartX, cloud2StartY, cloud2EndX = cloud2StartX + (int)(Math.random() * 10) - 3, cloud2EndY = cloud2StartY + (int)(Math.random() * 20));
+  line(cloud3StartX, cloud3StartY, cloud3EndX = cloud3StartX + (int)(Math.random() * 10) - 3, cloud3EndY = cloud3StartY + (int)(Math.random() * 20));
+  line(cloud4StartX, cloud4StartY, cloud4EndX = cloud4StartX + (int)(Math.random() * 10) - 3, cloud4EndY = cloud4StartY + (int)(Math.random() * 20));  
+  line(cloud5StartX, cloud5StartY, cloud5EndX = cloud5StartX + (int)(Math.random() * 10) - 3, cloud5EndY = cloud5StartY + (int)(Math.random() * 20));
+  line(cloud6StartX, cloud6StartY, cloud6EndX = cloud6StartX + (int)(Math.random() * 10) - 3, cloud6EndY = cloud6StartY + (int)(Math.random() * 20));
+  line(cloud0StartX, cloud0StartY, cloud0EndX = cloud0StartX + (int)(Math.random() * 10) - 3, cloud0EndY = cloud0StartY + (int)(Math.random() * 20));
 }
 
 void cloud(){
