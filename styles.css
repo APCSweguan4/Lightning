@@ -15,12 +15,12 @@ body {
 }
 
 header {
-	color: (255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 footer {
 	font-style: italic;
 	font-size: 90%;
-	color: (255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
